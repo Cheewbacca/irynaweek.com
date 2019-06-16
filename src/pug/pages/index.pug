@@ -4,96 +4,16 @@ html
         meta(charset="utf-8")
         link(rel="stylesheet", href="static\\css\\main.css")
     body
-        header
-            div.logo 
-                img(src="static\\img\\png\\logo.png", alt="")
-            div.search
-            nav
-                ul.burger
-                    li
-                        a(href="#about") O CEБЕ
-                    li
-                         a(href="#") БЛОГ
-                    li
-                         a(href="#") ТРЕНИРОВКИ
-                    li
-                         a(href="#") ИВЕНТЫ
-                    li
-                         a(href="#footer") КОНТАКТЫ
+        include includes/header.pug
         article
             div.collage-section
                 img(src="static\\img\\png\\collage2.png", alt="")
             
-            .about(id="about")
-                h2 О себе
-                .olimpic
-                    .olimpic-ico
-                    .olimpic-text Серебряный призер Олимпийских Игр 2008 в беге на 1500м.<br> Серебряный призер Чемпионата Мира 2007.
-                .hands
-                    .hands-ico
-                    .hands-text Мама двух дочерей.
-                .run
-                    .run-ico
-                    .run-text Профессиональный тренер.<br> Спортивный директор в компании Run Ukraine.<br> Вице-президент ОО Украинская Федерация “Здоровый образ жизни”.
-                .idea
-                    .idea-ico
-                    .idea-text Основатель проекта IrynaWeek.
+            include includes/about.pug
             
-            .last-in-blog
-                .facebook-post
-                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1333663586783188%26set%3Da.164274690388756%26type%3D3%26eid%3DARBLJ790QJy5nQKrtu_B8PVUfG6bYa303UCRKDgGH9LLxHuPr4Rp3cR81sVPRFQIhm18DI8vVv9j4Acd&width=477&show_text=true&height=409&appId" width="477" height="409" style="border:none;overflow:hidden;background-color:white" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                h2 ПОСЛЕДНЕЕ В БЛОГЕ
-                .posts
-                    .post-1
-                        .post-1-img 
-                            img(src="static\\img\\png\\post-1.png", alt="")
-                        .post-1-text
-                            h3 ВОССТАНОВЛЕНИЕ ОРГАНИЗМА
-                            p В практической работе с любителями бега я часто вижу, что время на тренировки они находят, а вот восстановлением организма, таким как: массаж, баня, бассейн...
-                            .blog-link
-                                a(href="#")
-                                    .read-more ЧИТАТЬ БОЛЬШЕ
-                                    .read-more-arrow
-                    .posts-middle-line
-                    .post-2
-                        .post-2-img
-                            img(src="static\\img\\png\\post-2.png", alt="")
-                        .post-2-text
-                            h3 ПОЧЕМУ В СПОРТЕ ВАЖНО ДУМАТЬ
-                            p Помимо тяжелой «пахоты»️, необходимо все время проводить много аналитики, чтобы эффективно планировать подготовку, соревновательный сезон, подведение к пику формы...
-                            .blog-link
-                                a(href="#")
-                                    .read-more ЧИТАТЬ БОЛЬШЕ
-                                    .read-more-arrow
+            include includes/last-in-blog.pug
 
-        footer(id="footer")
-            .footer-content
-                .footer-logo
-                    img(src="static\\img\\png\\footer-logo.png", alt="")
-                .footer-text
-                    p Сайт Ирины Лищинской - призера Олимпийских Игр, Чемпионата Мира, профессионального тренера, основателя проекта IrynaWeek, спортивного директора в Run Ukraine. На сайте вы можете записаться на мероприятия, узнать больше о здоровом образе жизни, отношении к себе и своему телу.
-                .footer-nav
-                    ul
-                        li
-                            a(href="#about") O CEБЕ
-                        li
-                            a(href="#") БЛОГ
-                        li
-                            a(href="#") ТРЕНИРОВКИ
-                        li
-                            a(href="#") ИВЕНТЫ
-                        li
-                            a(href="#") КОНТАКТЫ  
-                .footer-social
-                    a(href="#")
-                        .footer-social-inst
-                        .footer-social-helper Instagram
-                    a(href="#")   
-                        .footer-social-facebook
-                        .footer-social-helper Facebook
-                    a(href="mailto:")
-                        .footer-social-mail
-                        .footer-social-helper E-mail
+        include includes/footer.pug
                         
 
             
