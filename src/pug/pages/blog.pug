@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        link(rel="stylesheet", href="static\\css\\main.css")
+        link(rel="stylesheet", href="static\\css\\blog.css")
+    body
+        include includes/index/header.pug
+        article
+            h2 Блог
+            
+            include includes/blog/slider-blog.pug
+            
+            .posts-middle-line
+
+            include includes/blog/blog-1.pug
+
+            .posts-middle-line
+
+            include includes/blog/blog-2.pug
+
+            .posts-middle-line
+
+            include includes/blog/blog-3.pug
+            
+            include includes/blog/blog-buttons.pug  
+
+        include includes/index/footer.pug
