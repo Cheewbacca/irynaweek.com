@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        link(rel="stylesheet", href="static\\css\\main.css")
+        link(rel="stylesheet", href="static\\css\\trainings.css")
+    body
+        include includes/index/header.pug
+        
+        article
+            img(src="static\\img\\png\\trainings.png", alt="")
+
+            .messages
+                h2 ТРЕНИРОВКИ
+                .all-msg
+                    - var questions = ["Какой вид спорта?", "Для кого предназначены тренировки?", "Сколько людей в группе?","Что включают в себя тренировки?", "Какое расписание?", "Какая стоимость?", "Как я могу узнать больше?","Где проходят тренировки?"];
+                    - var answers = ["Бег", "Тренировки предназначены для любителей старше 18, людей любого уровня подготовки, любого пола и обладателей любых целей.", "Это группа с ограниченным количеством людей - до 15 человек.", "Тренировки направлены на всестороннее укрепление связок и мышц, сердечно-сосудистой и дыхательной систем, формирование техники бега, развитие функциональных возможностей человека для достижения личных целей.", "Понедельник, среда, пятница - 19:30, суббота - утренний кросс.", "3500₴ в месяц с человека", "irynaweek@gmail.com", "Стадион Атлет по адресу: Лабораторный проулок, Киев."]
+                    - for (var i = 0; i < 8; i++){
+                        .msg-i
+                            .question-i
+                                p=questions[i]
+                            .answer-i
+                                p=answers[i]
+                    -}
+            .map
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.9339690060415!2d30.524313771966423!3d50.42858571328653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1ae421960d%3A0xf73a144a65498087!2z0KHRgtCw0LTQuNC-0L0g0JDRgtC70LXRgg!5e0!3m2!1sru!2sua!4v1561038028614!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;margin-left:auto;margin-right:auto;" allowfullscreen></iframe>
+            
+            include includes/index/footer.pug
