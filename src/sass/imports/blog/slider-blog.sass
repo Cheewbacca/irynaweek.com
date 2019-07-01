@@ -1,10 +1,22 @@
 .slider-blog
         display: flex;
-        width: 930px;
-        height: 383px;
+        max-width: 930px;
+        min-height: 383px;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width: 930px)
+            height: 550px;
+            width: 465px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow-x: hidden;
+            overflow-y: hidden;
         .slider
             width: 522px;
             height: 100%;
+            @media screen and (max-width: 930px)
+                height: 50%;
             .slider-item
                 position: relative;
                 img
@@ -45,6 +57,9 @@
                             margin-top: 4px;
         .slider-social
             width: 405px;
+            @media screen and (max-width: 930px)
+                height: 30%;
+                width: 100%;
             h3
                 text-align: center;
                 margin-top: 35%;
@@ -54,6 +69,8 @@
                 font-size: 16px;
                 line-height: 20px;
                 color: #000000;
+                @media screen and (max-width: 930px)
+                    margin-top: 20%;
             .slider-social-contact
                 display: flex;
                 justify-content: space-between;
@@ -74,6 +91,8 @@
                             display: block;
                             position: absolute;
                             top: 33em;
+                            @media screen and (max-width: 943px)
+                                top: 51em;
                             width: 80px;
                             height: 20px;
                             text-align: center;
@@ -93,6 +112,8 @@
                             display: block;
                             position: absolute;
                             top: 33em;
+                            @media screen and (max-width: 943px)
+                                top: 51em;
                             width: 80px;
                             height: 20px;
                             text-align: center;
@@ -112,6 +133,8 @@
                             display: block;
                             position: absolute;
                             top: 33em;
+                            @media screen and (max-width: 943px)
+                                top: 51em;
                             width: 80px;
                             height: 20px;
                             text-align: center;

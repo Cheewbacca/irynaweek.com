@@ -3,8 +3,19 @@
         width: 100%;
         margin-top: 40px;
         display: flex;
+        @media screen and (max-width: 930px)
+            height: 640px;
+            flex-direction: column-reverse;
+            margin-left: auto;
+            margin-right: auto;
         .blog-3-text
             width: 450px;
+            @media screen and (max-width: 930px)
+                height: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 50px;
+                padding-left: 10px;
             span
                 ont-family: Arial futuralight;
                 font-style: normal;
@@ -52,6 +63,10 @@
         .blog-3-img
             height: 320px;
             width: 480px;
+            @media screen and (max-width: 930px)
+                height: 50%;
+                margin-left: auto;
+                margin-right: auto;
             img
                 display: block;
                 margin-left: auto;

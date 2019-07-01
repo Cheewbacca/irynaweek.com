@@ -4,12 +4,19 @@
             height: 548px;
             margin-left: auto;
             margin-right: auto;
+            @media screen and (max-width: 620px)
+                width: 100%;
+                overflow-x: hidden;
+                overflow-y: hidden;
             h2
-                text-align: center;
+                // text-align: center;
                 font-family: Arial sans-serif futurademi;
                 font-style: normal;
                 font-weight: normal;
                 text-transform: uppercase;
+                margin-left: auto;
+                margin-right: auto;
+                width: 145px;
                 font-size: 40px;
                 margin-bottom: 30px;
             .olimpic
@@ -32,9 +39,14 @@
                     font-weight: normal;
                     font-size: 19px;
                     line-height: 25px;
+                    @media screen and (max-width: 620px)
+                        width: 400px;
+                    @media screen and (max-width: 520px)
+                        font-size: 17px;
             .hands
                 position: relative;
                 height: 122px;
+
                 .hands-ico
                     position: absolute;
                     left: 0px;
@@ -54,9 +66,14 @@
                     top: 35%;
                     left: 60%;
                     transform: translate(-50%, -50%);
+                    @media screen and (max-width: 620px)
+                        width: 400px;
+                    @media screen and (max-width: 520px)
+                        font-size: 17px;
             .run
                 position: relative;
                 height: 122px;
+                width: 100%;
                 .run-ico
                     position: absolute;
                     left: 0px;
@@ -74,6 +91,11 @@
                     font-weight: normal;
                     font-size: 19px;
                     line-height: 25px;
+                    @media screen and (max-width: 620px)
+                        width: 400px;
+                    @media screen and (max-width: 520px)
+                        font-size: 17px;
+                        line-height: 25px;
             .idea
                 position: relative;
                 height: 122px;
@@ -96,3 +118,7 @@
                     top: 35%;
                     left: 60%;
                     transform: translate(-50%, -50%);
+                    @media screen and (max-width: 620px)
+                        width: 400px;
+                    @media screen and (max-width: 520px)
+                        font-size: 17px;

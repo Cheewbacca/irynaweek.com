@@ -23,6 +23,7 @@ html
                                 p=answers[i]
                     -}
             .map
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.9339690060415!2d30.524313771966423!3d50.42858571328653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1ae421960d%3A0xf73a144a65498087!2z0KHRgtCw0LTQuNC-0L0g0JDRgtC70LXRgg!5e0!3m2!1sru!2sua!4v1561038028614!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;margin-left:auto;margin-right:auto;" allowfullscreen></iframe>
-            
+                <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.9339690060415!2d30.524313771966423!3d50.42858571328653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1ae421960d%3A0xf73a144a65498087!2z0KHRgtCw0LTQuNC-0L0g0JDRgtC70LXRgg!5e0!3m2!1sru!2sua!4v1561038028614!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;margin-left:auto;margin-right:auto;" allowfullscreen></iframe>
+                script(type="text/javascript").
+                    if(document.body.clientWidth <= 700){ document.getElementById("google-map").width="100%";};
             include includes/index/footer.pug
