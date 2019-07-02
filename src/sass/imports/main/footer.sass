@@ -4,7 +4,7 @@ footer
         overflow-y: hidden;
         @media screen and (max-width: 800px)
             position: relative;
-            height: 550px;
+            height: 600px;
         .footer-content
             display: flex;
             flex-wrap: wrap;
@@ -27,14 +27,18 @@ footer
                     width: 350px;
                     border-bottom: 1px solid #ffffff;
                     padding-bottom: 20px;
+                    padding-top: 20px;
                     text-align: center;
+                    height: 150px;
                 img
                     width: 265px;
             .footer-text
                 @media screen and (max-width: 800px)
-                    width: 350px;
+                    width: 250px;
                     position: absolute;
-                    bottom: 20px;
+                    bottom: 3%;
+                    text-align: center;
+                    height: 200px;
                     text-align: center;
                 p
                     width: 335px;
@@ -54,6 +58,7 @@ footer
                     text-align: center;
                     border-bottom: 1px solid #ffffff;
                     padding-bottom: 20px;
+                    height: 180px;
                 ul
                     li
                         font-family: Arial futuralight;
@@ -69,8 +74,13 @@ footer
                         width: 350px;
                         display: flex;
                         justify-content: space-around;
-                        bottom: 130px;
+                        bottom: 31%;
                         height: 49px;
+                    @media screen and (max-width: 480px)
+                        width: 250px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 15%;
                     a
                         .footer-social-helper
                             display: none;

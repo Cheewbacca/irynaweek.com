@@ -1,3 +1,5 @@
+@import 'adaptiv/ad_main'
+
 *
     box-sizing: border-box;
 a
@@ -13,15 +15,19 @@ body
     margin: 0px;
     @import 'imports/main/header'
     article
-        .collage-section
+        .collage-section    
             img
-                margin-top: 45px;  
+                margin-top: 45px;
+                @media screen and (max-width: 480px)
+                    margin-top: 15px;
                 width: 100%; 
         @import 'imports/main/about'
         
         @import 'imports/main/last-in-blog'
 
     @import 'imports/main/footer'
+
+
 
 
                         

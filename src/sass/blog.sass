@@ -17,6 +17,8 @@ article
         font-weight: normal;
         font-size: 38px;
         color: #000000;
+        @media screen and (max-width: 480px)
+            font-size: 32px;
     
     @import 'imports/blog/slider-blog'
 
@@ -27,6 +29,8 @@ article
                 width: 100%;
                 margin-left: auto;
                 margin-right: auto;
+                @media screen and (max-width: 480px)
+                    margin-top: 0px;
 
     #first-mid-line
         width: 930px;
@@ -39,6 +43,10 @@ article
         margin-right: auto;
         @media screen and (max-width: 930px)
             width: 100%;
+        @media screen and (max-width: 480px)
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
     
     @import 'imports/blog/blog-1'
 

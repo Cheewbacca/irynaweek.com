@@ -8,8 +8,9 @@
                 width: 100%;
                 overflow-x: hidden;
                 overflow-y: hidden;
+            @media screen and (max-width: 480px)
+                height: auto;
             h2
-                // text-align: center;
                 font-family: Arial sans-serif futurademi;
                 font-style: normal;
                 font-weight: normal;
@@ -19,9 +20,19 @@
                 width: 145px;
                 font-size: 40px;
                 margin-bottom: 30px;
+                @media screen and (max-width: 480px)
+                    font-size: 22px;
+                    width: auto;
+                    text-align: center;
+                    margin-bottom: 15px;
+
             .olimpic
                 position: relative;
                 height: 122px;
+                @media screen and (max-width: 480px)
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 244px;
                 .olimpic-ico
                     position: absolute;
                     left: 0px;
@@ -29,6 +40,12 @@
                     height: 100%;
                     background-image: url('../img/png/sprite.png');
                     background-position: 10px -5px;
+                    @media screen and (max-width: 480px)
+                        position: static;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-position: 19px -5px;
+                        height: 35%;
                 .olimpic-text
                     width: 503px;
                     position: absolute;
@@ -43,10 +60,19 @@
                         width: 400px;
                     @media screen and (max-width: 520px)
                         font-size: 17px;
+                    @media screen and (max-width: 480px)
+                        position: static;
+                        text-align: center;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        width: auto;
             .hands
                 position: relative;
                 height: 122px;
-
+                @media screen and (max-width: 480px)
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 200px;
                 .hands-ico
                     position: absolute;
                     left: 0px;
@@ -54,6 +80,12 @@
                     height: 100%;
                     background-image: url('../img/png/sprite.png');
                     background-position: -120px -3px;
+                    @media screen and (max-width: 480px)
+                        position: static;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-position: -111px -5px;
+                        height: 45%;
                 .hands-text
                     width: 503px;
                     position: absolute;
@@ -70,10 +102,23 @@
                         width: 400px;
                     @media screen and (max-width: 520px)
                         font-size: 17px;
+                    @media screen and (max-width: 480px)
+                        position: static;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        width: 350px;
+                        transform: none;
             .run
                 position: relative;
                 height: 122px;
                 width: 100%;
+                @media screen and (max-width: 480px)
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 250px;
                 .run-ico
                     position: absolute;
                     left: 0px;
@@ -81,6 +126,12 @@
                     height: 100%;
                     background-image: url('../img/png/sprite.png');
                     background-position: -245px -6px;
+                    @media screen and (max-width: 480px)
+                        position: static;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-position: -236px -5px;
+                        height: 45%;
                 .run-text
                     width: 503px;
                     position: absolute;
@@ -96,9 +147,23 @@
                     @media screen and (max-width: 520px)
                         font-size: 17px;
                         line-height: 25px;
+                    @media screen and (max-width: 480px)
+                        position: static;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        width: auto;
+                        transform: none;
             .idea
                 position: relative;
                 height: 122px;
+                @media screen and (max-width: 480px)
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 200px;
+                    margin-top: 15px;
                 .idea-ico
                     position: absolute;
                     left: 0px;
@@ -106,6 +171,12 @@
                     height: 100%;
                     background-image: url('../img/png/sprite.png');
                     background-position: -360px -6px;
+                    @media screen and (max-width: 480px)
+                        position: static;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-position: -351px -5px;
+                        height: 45%;
                 .idea-text
                     width: 503px;
                     position: absolute;
@@ -122,3 +193,12 @@
                         width: 400px;
                     @media screen and (max-width: 520px)
                         font-size: 17px;
+                    @media screen and (max-width: 480px)
+                        position: static;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        width: 350px;
+                        transform: none;
