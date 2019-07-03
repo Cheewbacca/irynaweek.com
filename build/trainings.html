@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div class="logo"> <img src="static\img\png\logo.png" alt=""></div>
+      <div class="logo"> <a href="index.html"> <img src="static\img\png\logo.png" alt=""></a></div>
       <div class="search"></div>
       <nav>
         <ul class="burger">
@@ -16,11 +16,11 @@
           <li><a href="blog.html">БЛОГ</a></li>
           <li><a href="trainings.html">ТРЕНИРОВКИ</a></li>
           <li><a href="#">ИВЕНТЫ</a></li>
-          <li><a href="#footer">КОНТАКТЫ</a></li>
+          <li><a class="contacts" href="#footer">КОНТАКТЫ</a></li>
         </ul>
       </nav>
     </header>
-    <article><img src="static\img\png\trainings.png" alt="">
+    <article><img id="art-img" src="static\img\png\trainings.png" alt="">
       <div class="messages">
         <h2>ТРЕНИРОВКИ</h2>
         <div class="all-msg">
@@ -29,7 +29,7 @@
               <p>Какой вид спорта?</p>
             </div>
             <div class="answer-i">
-              <p>Бег</p>
+              <p>Бег.</p>
             </div>
           </div>
           <div class="msg-i">
@@ -69,7 +69,7 @@
               <p>Какая стоимость?</p>
             </div>
             <div class="answer-i">
-              <p>3500₴ в месяц с человека</p>
+              <p>3500₴ в месяц с человека.</p>
             </div>
           </div>
           <div class="msg-i">
@@ -95,7 +95,7 @@
       </div>
       <footer id="footer">
         <div class="footer-content">
-          <div class="footer-logo" id="footer_logo"><img src="static\img\png\footer-logo.png" alt=""></div>
+          <div class="footer-logo" id="footer_logo"><a href="index.html"><img src="static\img\png\footer-logo.png" alt=""></a></div>
           <div class="footer-text">
             <p>Сайт Ирины Лищинской - призера Олимпийских Игр, Чемпионата Мира, профессионального тренера, основателя проекта IrynaWeek, спортивного директора в Run Ukraine. На сайте вы можете записаться на мероприятия, узнать больше о здоровом образе жизни, отношении к себе и своему телу.</p>
           </div>
@@ -119,4 +119,7 @@
       </footer>
     </article>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+  <script src="static\js\scripts\slick\slick.min.js"></script>
+  <script src="static\js\scripts\script.js"></script>
 </html>
