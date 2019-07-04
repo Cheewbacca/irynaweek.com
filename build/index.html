@@ -4,13 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="static\css\main.css">
+    <link rel="stylesheet" href="static\js\main.css">
   </head>
   <body>
     <header>
-      <div class="logo"> <a href="index.html"> <img src="static\img\png\logo.png" alt=""></a></div>
+      <div class="hamburger"></div>
+      <div class="cross"></div>
+      <div class="logo"> <a href="index.html"> <img src="static\img\png\logo.png" alt=""></a><img id="mobile-logo" src="static\\js\\img\\logo.png" alt="IrynaWeek" class="hamburger__logo"></div>
       <div class="search"></div>
       <nav>
         <ul class="burger">
+          <li><a href="index.html">O CEБЕ</a></li>
+          <li><a href="blog.html">БЛОГ</a></li>
+          <li><a href="trainings.html">ТРЕНИРОВКИ</a></li>
+          <li><a href="#">ИВЕНТЫ</a></li>
+          <li><a class="contacts" href="#footer">КОНТАКТЫ</a></li>
+        </ul>
+        <ul class="menu">
           <li><a href="index.html">O CEБЕ</a></li>
           <li><a href="blog.html">БЛОГ</a></li>
           <li><a href="trainings.html">ТРЕНИРОВКИ</a></li>
@@ -21,6 +31,9 @@
     </header>
     <article>
       <div class="collage-section"><img src="static\img\png\collage2.png" alt=""></div>
+      <div class="button">
+        <div class="button__text">&#9491</div>
+      </div>
       <div class="about" id="about">
         <h2>О себе</h2>
         <div class="olimpic">
@@ -46,27 +59,27 @@
         </div>
         <h2>ПОСЛЕДНЕЕ В БЛОГЕ</h2>
         <div class="posts">
-          <div class="post-1">
-            <div class="post-1-img"> <img src="static\img\png\slider-item.png" alt=""></div>
-            <div class="post-1-text">
-              <h3>ВОССТАНОВЛЕНИЕ ОРГАНИЗМА</h3>
-              <p>В практической работе с любителями бега я часто вижу, что время на тренировки они находят, а вот восстановлением организма, таким как: массаж, баня, бассейн...</p>
-              <div class="blog-link"><a href="full_blog_3.html">
+          <div class="post-1"><a href="full_blog_3.html">
+              <div class="post-1-img"> <img src="static\img\png\slider-item.png" alt=""></div>
+              <div class="post-1-text">
+                <h3>ВОССТАНОВЛЕНИЕ ОРГАНИЗМА</h3>
+                <p>В практической работе с любителями бега я часто вижу, что время на тренировки они находят, а вот восстановлением организма, таким как: массаж, баня, бассейн...</p>
+                <div class="blog-link">
                   <div class="read-more">ЧИТАТЬ БОЛЬШЕ</div>
-                  <div class="read-more-arrow"></div></a></div>
-            </div>
-          </div>
+                  <div class="read-more-arrow"></div>
+                </div>
+              </div></a></div>
           <div class="posts-middle-line"></div>
-          <div class="post-2">
-            <div class="post-2-img"><img src="static\img\png\blog-2.png" alt=""></div>
-            <div class="post-2-text">
-              <h3>ПОЧЕМУ В СПОРТЕ ВАЖНО ДУМАТЬ</h3>
-              <p>Помимо тяжелой «пахоты»️, необходимо все время проводить много аналитики, чтобы эффективно планировать подготовку, соревновательный сезон, подведение к пику формы...</p>
-              <div class="blog-link"><a href="full_blog_1.html">
+          <div class="post-2"><a href="full_blog_1.html">
+              <div class="post-2-img"><img src="static\img\png\blog-2.png" alt=""></div>
+              <div class="post-2-text">
+                <h3>ПОЧЕМУ В СПОРТЕ ВАЖНО ДУМАТЬ</h3>
+                <p>Помимо тяжелой «пахоты»️, необходимо все время проводить много аналитики, чтобы эффективно планировать подготовку, соревновательный сезон, подведение к пику формы...</p>
+                <div class="blog-link">
                   <div class="read-more">ЧИТАТЬ БОЛЬШЕ</div>
-                  <div class="read-more-arrow"></div></a></div>
-            </div>
-          </div>
+                  <div class="read-more-arrow"></div>
+                </div>
+              </div></a></div>
         </div>
       </div>
     </article>
