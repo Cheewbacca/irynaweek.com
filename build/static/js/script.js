@@ -53,7 +53,10 @@ $(".contacts").click(function () {
 	$("html, body").animate({
 		scrollTop: $(anchor).offset().top - 60
 	}, 500);
-	hideMenu();
+	if ( $(window).width() <= '480'){
+		hideMenu();
+	}
+	
 });
 
 
