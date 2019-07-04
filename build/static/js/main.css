@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+
+
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background: #ffffff; 
+    height: 60px; 
+    line-height: 60px;
+    border-bottom: 1px solid #dddddd;
+    display:inline-block; 
+    font-size:12px;
+}
+.hamburger__logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: auto;
+}
+.hamburger{
+    width: 40px;
+    height: 40px;
+    background: url('img/menu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.cross{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: url('img/close.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 18px;
+    right: 25px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu{
+    z-index: 1;
+    font-weight: bold; 
+    font-size: 0.8em; 
+    width: 100%; 
+    background: #f1f1f1; 
+    background: #fff; 
+    position: fixed;
+    top: 60px;
+    left: 0; 
+    text-align: center; 
+    font-size: 12px;
+}
+.menu ul{
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+}
+.menu li{
+    display: block;   
+    padding: 15px 0 15px 0; 
+    border-bottom: #dddddd 1px solid;
+}
+.menu a:first-child li{
+    border-top: #dddddd 1px solid;
+}
+.menu li:hover{    
+    background: #f1dff4;
+
+}
+.menu a{ 
+    text-decoration: none;  
+    margin: 0px; 
+    color:#666;
+    text-transform: uppercase;
+}
+
+/*Button scroll to the top*/
+
+.button{
+    position: fixed;
+    left: 100px;
+    bottom: 150px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#f1dff4, #fefcfe);
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.button__text{
+    text-align: center;
+    -webkit-transform: rotate(315deg);
+    font-family: arial;
+    font-size: 20px;
+    margin: 8px;
+}
+
+
+.sliderWrap{
+    background: #666;
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+.slider{
+    /*background: #333;*/
+    height: auto;
+    margin: 30px auto;
+}
+.slider__img{
+    width: 100%;
+    text-align: center;
+}
+.slide__button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+.button_left{
+    background-color: #fff;
+    background-image: url('img/next.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    left: 10px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.button_right{
+    background-color: #fff;
+    background-image: url('img/next.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    right: 10px;
+}
+.navButtonWrap{ 
+    width: 60px;
+    height: auto;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    list-style: none;
+    z-index: 2;
+}
+.navButtonWrap__item{
+    position: relative;
+    min-width: 15px;
+    min-height: 15px;
+    background: #000;
+    border-radius: 50%;
+    color: #000;
+    font-size: 0;
+    cursor: pointer;
+}
+.navButtonWrap__item--active{
+    background: #fff;
+}
+
