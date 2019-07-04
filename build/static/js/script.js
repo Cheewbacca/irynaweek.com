@@ -39,6 +39,36 @@ $(function () {
 	});
 });
 
+
+$(function() {
+	$(window).scroll(function() {
+		if($(this).scrollTop() >= '240') {
+			$("nav").css({
+				"position": "fixed",
+				'top': '0',
+				'left': '0',
+				'background': '#fff',
+				'align-content': 'center',
+				'margin': '0',
+				'padding': '15px',
+				'width': '100%',
+				'z-index': '1',
+				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)',
+			});
+		}
+		else{
+			$("nav").css({
+				"position": "relative",
+				'top': '0',
+				'box-shadow': 'none',
+				'padding': '0 0 20px',
+				'margin-top': '12px',
+			});
+		}
+	})
+});
+
+
 $(".button").on("click", function () {
 	$("html, body").animate({ scrollTop: 0 }, 500, function () {
 		$(".button").fadeOut();
