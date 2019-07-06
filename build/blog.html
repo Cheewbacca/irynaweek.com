@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="static\css\main.css">
     <link rel="stylesheet" href="static\css\blog.css">
     <link rel="stylesheet" href="static\js\main.css">
+    <link rel="stylesheet" type="text/css" href="static\js\slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="static\js\slick/slick-theme.css">
   </head>
   <body>
     <header>
       <div class="hamburger"></div>
       <div class="cross"></div>
-      <div class="logo"> <a href="index.html"> <img src="static\img\png\logo.png" alt=""></a><img id="mobile-logo" src="static\\js\\img\\logo.png" alt="IrynaWeek" class="hamburger__logo"></div>
+      <div class="logo"> <a href="index.html"> <img src="static\img\png\logo.png" alt=""></a><a id="mobile-logo" href="index.html"><img class="hamburger__logo" src="static\js\img\logo.png" alt="IrynaWeek"></a></div>
       <div class="search"></div>
       <nav>
         <ul class="burger">
@@ -37,21 +39,42 @@
       <h2>Блог</h2>
       <div class="slider-blog">
         <div class="slider">
-          <div class="slider-item">
-            <div class="slider-item-link">
-              <h4>ВОССТАНОВЛЕНИЕ ОРГАНИЗМА</h4><a href="full_blog_3.html">
-                <div class="read-more">ЧИТАТЬ БОЛЬШЕ</div>
-                <div class="read-more-arrow"></div></a>
-            </div><img src="static\img\png\slider-item.png" alt="">
+          <div class="slide__button button_left"></div>
+          <div class="slide__button button_right"></div>
+          <ul class="navButtonWrap">
+            <li class="navButtonWrap__item navButtonWrap__item--active">0</li>
+            <li class="navButtonWrap__item">1</li>
+            <li class="navButtonWrap__item">2</li>
+          </ul>
+          <div class="single-item">
+            <div class="newSlider__item">   
+              <div class="slider-item-link">
+                <h4>ВОССТАНОВЛЕНИЕ ОРГАНИЗМА</h4><a href="full_blog_3.html">
+                  <div class="read-more">Читать больше</div>
+                  <div class="read-more-arrow"></div></a>
+              </div><img src="static\img\png\slider-item.png" alt="">
+            </div>
+            <div class="newSlider__item">   
+              <div class="slider-item-link">
+                <h4>Почему в спорте важно думать </h4><a href="full_blog_1.html">
+                  <div class="read-more">Читать больше</div>
+                  <div class="read-more-arrow"></div></a>
+              </div><img src="static\img\png\blog-2.png" alt="">
+            </div>
+            <div class="newSlider__item">   
+              <div class="slider-item-link">
+                <h4>КАК Я ПРИШЛА В СПОРТ. Часть 1</h4><a href="full_blog_1.html">
+                  <div class="read-more">Читать больше</div>
+                  <div class="read-more-arrow"></div></a>
+              </div><img src="static\img\png\blog-3.png" alt="">
+            </div>
           </div>
-          <div class="slider-item"></div>
-          <div class="slider-item"></div>
         </div>
         <div class="slider-social">
-          <h3>БУДЬТЕ С НАМИ НА СВЯЗИ</h3>
+          <h3>Будьте с нами на связи</h3>
           <div class="slider-social-contact"><a href="https://www.instagram.com/iryna_lishchynska/" target="_blank">
               <div class="slider-social-inst"></div>
-              <div class="slider-social-helper inst">Instagram</div></a><a href="https://www.facebook.com/irinka.lesch" target="_blank">  
+              <div class="slider-social-helper inst">Instagram</div></a><a href="https://www.facebook.com/irinka.lesch" target="_blank">
               <div class="slider-social-facebook"></div>
               <div class="slider-social-helper face">Facebook</div></a><a href="mailto:irynaweek@gmail.com" target="_blank">
               <div class="slider-social-mail"></div>
@@ -62,6 +85,8 @@
       <div class="blogs-content">
         <div class="blog-1">
           <div class="blog-1-text"><span>XX MMMM YYYY</span>
+            <div class="h3-href"><a href="full_blog_3.html">
+                <h3>ВОССТАНОВЛЕНИЕ ОРГАНИЗМА</h3></a></div>
             <h3>ВОССТАНОВЛЕНИЕ ОРГАНИЗМА</h3>
             <p>В практической работе с любителями бега я часто вижу, что время на тренировки они находят, а вот восстановлением организма, таким как: массаж, баня, бассейн...</p><a href="full_blog_3.html">
               <div class="read-more">ЧИТАТЬ БОЛЬШЕ</div>
@@ -72,6 +97,8 @@
         <div class="posts-middle-line"></div>
         <div class="blog-2">
           <div class="blog-2-text"><span>XX MMMM YYYY</span>
+            <div class="h3-href"><a href="full_blog_1.html">
+                <h3>ПОЧЕМУ В СПОРТЕ ВАЖНО ДУМАТЬ</h3></a></div>
             <h3>ПОЧЕМУ В СПОРТЕ ВАЖНО ДУМАТЬ</h3>
             <p>Помимо тяжелой «пахоты»️, необходимо все время проводить много аналитики, чтобы эффективно планировать подготовку, соревновательный сезон, подведение к пику формы...</p><a href="full_blog_1.html">
               <div class="read-more">ЧИТАТЬ БОЛЬШЕ</div>
@@ -82,6 +109,8 @@
         <div class="posts-middle-line"></div>
         <div class="blog-3">
           <div class="blog-3-text"><span>XX MMMM YYYY</span>
+            <div class="h3-href"><a href="full_blog_1.html">
+                <h3>КАК Я ПРИШЛА В СПОРТ. Часть 1</h3></a></div>
             <h3>КАК Я ПРИШЛА В СПОРТ. Часть 1</h3>
             <p>В детстве я была очень подвижным ребенком. Целыми днями мы бегали с друзьями на улице, играли в разные игры, перепрыгивали с крыши на крышу гаражей через большие...</p><a href="full_blog_2.html">
               <div class="read-more">ЧИТАТЬ БОЛЬШЕ</div>
