@@ -56,7 +56,7 @@ $(function() {
 				'background': '#fff',
 				'align-content': 'center',
 				'margin': '0',
-				'padding': '15px',
+				'padding-top': '15px',
 				'width': '100%',
 				'z-index': '1',
 				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)',
