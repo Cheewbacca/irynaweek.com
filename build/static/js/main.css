@@ -34,6 +34,7 @@
     z-index: 1;
     font-weight: bold; 
     font-size: 0.8em; 
+    font-family: Arial;
     width: 100%; 
     background: #f1f1f1; 
     background: #fff; 
@@ -163,7 +164,14 @@
     list-style: none;
     z-index: 2;
 }
-
+@media screen and (max-width: 930px){
+    .button_left{
+        top: 40%;
+    }
+    .button_right{
+        top: 40%;
+    }
+}
 @media screen and (max-width: 480px){
     .button_left{
         top: 25%;

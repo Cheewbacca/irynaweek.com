@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     @media screen and (max-width: 930px)
-        width: 550px;
+        width: 380px;
         overflow-x: hidden;
         overflow-y: hidden;
     @media screen and (max-width: 480px)
@@ -14,17 +14,29 @@
         width: 522px;
         height: 350px;
         position: relative;
+        @media screen and (max-width: 930px)
+            width: 100%;
+            height: auto;
         @media screen and (max-width: 480px)
             width: 100%;
         .single-item
             width: 100%;
+            @media screen and (max-width: 930px)
+                height: auto;
             .newSlider__item   
                 position: relative;
                 width: 100%;
                 height: 383px;
+                background-color: #666666;
+                @media screen and (max-width: 930px)
+                    height: auto;
+                @media screen and (max-width: 480px)
+                    height: 340px;
                 img
-                    width: 100%;
+                    max-width: 100%;
                     height: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
                     @media screen and (max-width: 930px)
                         height: 283px;
                     @media screen and (max-width: 480px)
@@ -40,7 +52,7 @@
                     background-color: #ffffff;
                     padding: 20px;
                     @media screen and (max-width: 480px)
-                        bottom: 50px;
+                        bottom: 0;
                         width: 100%;
                         background: #F1DFF4;
                         left: inherit;
