@@ -13,7 +13,7 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             position: relative;
             border-radius: 25px;
-            height: 500px;
+            height: auto;
             margin-bottom: 30px;
             &:hover
                 background: #F1DFF4;
@@ -28,6 +28,7 @@
                 padding-left: 10px;
             @media screen and (max-width: 480px)
                 width: 100%;
+                height: auto;
                 padding-top: 5px;
             span
                 ont-family: Arial, futuralight;
@@ -45,6 +46,7 @@
                 height: 85px;
                 @media screen and (max-width: 480px)
                     display: none;
+                    width: 100%;
                 a
                     width: 380px;
                     @media screen and (max-width: 380px)
@@ -74,7 +76,7 @@
                     text-align: center;
                     font-size: 18px;
                     line-height: 24px;
-                    width: 200px;
+                    width: 100%;
                     margin-top: 0px;
                     margin-left: auto;
                     margin-right: auto;
@@ -92,20 +94,23 @@
                     height: auto;
                     line-height: 21px;
                     margin-top: 5px;
-                    width: 250px;
+                    width: 100%;
                     margin-left: auto;
                     margin-right: auto;
                     text-align: center;
+                    padding: 25px;
+                @media screen and (max-width: 320px)
+                    padding: 15px;
 
             a
                 display: flex;
                 margin-top: 18px;
                 width: 150px;
                 @media screen and (max-width: 480px)
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 340px;
-                    height: 500px;
+                    // margin-left: auto;
+                    // margin-right: auto;
+                    width: 100%;
+                    height: 100%;
                     top: 0px;
                     position: absolute;
                 .read-more
@@ -117,8 +122,9 @@
                     width: 145px;  
                     @media screen and (max-width: 480px)
                         position: absolute;
-                        bottom: 30px;
-                        left: 25%;
+                        bottom: 5%;
+                        left: 50%;
+                        margin-left: -90px;
                 .read-more-arrow
                     width: 6px;
                     height: 6px;
@@ -128,8 +134,9 @@
                     margin-top: 5px;
                     @media screen and (max-width: 480px)
                         position: absolute;
-                        bottom: 36px;
-                        left: 68%;
+                        bottom: 6%;
+                        left: 50%;
+                        margin-left: 60px;
 
         .blog-1-img
             height: 320px;
@@ -140,6 +147,7 @@
                 margin-right: auto;
             @media screen and (max-width: 480px)
                 width: 100%;
+                top: 0;
             img
                 display: block;
                 margin-left: auto;
