@@ -61,6 +61,9 @@ $(function() {
 			// 	'z-index': '1',
 				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)',
 			});
+			$('header').css({
+				'box-shadow': 'none'
+			});
 		}
 		else{
 			$("nav").css({
@@ -71,6 +74,9 @@ $(function() {
 			// 	'padding': '0 0 20px',
 			// 	'margin-top': '12px',
 			// 	'background': 'none',
+			});
+			$('header').css({
+				'box-shadow': ''
 			});
 		}
 	})
