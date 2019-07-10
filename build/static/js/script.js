@@ -16,8 +16,6 @@ function showMenu() {
 
 // burger menu
 $(function () {
-	$(".cross").hide();
-	$(".menu").hide();
 	$(".hamburger").click(function () {
 		showMenu();
 	});
@@ -47,19 +45,19 @@ $(function () {
 
 
 $(function() {
-	$(window).scroll(function() {
-		if($(this).scrollTop() >= 232 && $(this).width() >= 480) {
+	$(window).scroll(function(){
+		if($(this).scrollTop() >= 255 && $(this).width() >= 480) {
 			$("nav").css({
 				"position": "fixed",
 				'top': '0',
 				'bottom': 'initial',
-				// 'left': '0',
-			// 	'align-content': 'center',
-			// 	'margin': '0',
-			// 	'padding-top': '15px',
-			// 	'width': '100%',
-			// 	'z-index': '1',
+				'left': '0',
+			 	'align-content': 'center',
+			 	'margin': '0',
+			 	'width': '100%',
+			 	'z-index': '1000',
 				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)',
+				'background': '#fff'
 			});
 			$('header').css({
 				'box-shadow': 'none'
@@ -78,6 +76,26 @@ $(function() {
 			$('header').css({
 				'box-shadow': ''
 			});
+		}
+	})
+});
+
+/* Make nav fixedable again */
+
+$(function() {
+	var wndw = $(this),
+		header = $('header'),
+		nav = $('nav');
+	var offset = nav.offset().top;
+
+	$(window).scroll(function(){
+		if(wndw.scrollTop() >= offset) {
+			nav.addClass('nav-fixed');
+			header.addClass('header-nav-fixed');
+		}
+		else{
+			nav.removeClass('nav-fixed');
+			header.removeClass('header-nav-fixed');
 		}
 	})
 });
@@ -148,15 +166,6 @@ $('.single-item').on('afterChange', function(){
 	// }).addClass("navButtonWrap__item--active");
 });
 
-
-// $(function(){
-// 	if( $(window).width() <= '500' ){
-// 		$('#fb-post').css({
-// 			'width': '320px',
-// 			'margin': 'auto',
-// 		});
-// 	}
-// });
 
 
 

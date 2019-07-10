@@ -1,0 +1,91 @@
+.slide__button
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+
+
+.button_left
+    background-color: #fff;
+    top: 50%;
+    left: 10px;
+    .button-text-left
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        margin-left: -5px;
+        top: 50%;
+        margin-top: -10px;
+        border-left: 2px solid;
+        border-top: 2px solid;
+        transform: rotate(-45deg);
+
+.button_right
+    background-color: #fff;
+    background-image: url('img/next.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    right: 10px;
+    .button-text-right
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        margin-left: -15px;
+        top: 50%;
+        margin-top: -10px;
+        border-left: 2px solid;
+        border-top: 2px solid;
+        transform: rotate(135deg);
+
+.navButtonWrap
+    width: 60px;
+    height: auto;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    list-style: none;
+    z-index: 2;
+
+// @media screen and (max-width: 930px){
+//     .button_left{
+//         top: 40%;
+//     }
+//     .button_right{
+//         top: 40%;
+//     }
+// }
+// @media screen and (max-width: 480px){
+//     .button_left{
+//         top: 25%;
+//     }
+//     .button_right{
+//         top: 25%;
+//     }
+//     .navButtonWrap{
+//         bottom: 100px;
+//     }
+// }
+
+.navButtonWrap__item
+    position: relative;
+    min-width: 15px;
+    min-height: 15px;
+    background: #000;
+    border-radius: 50%;
+    color: #000;
+    font-size: 0;
+    cursor: pointer;
+
+
+.navButtonWrap__item--active
+    background: #fff;
