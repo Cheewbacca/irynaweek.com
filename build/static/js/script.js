@@ -60,7 +60,7 @@ $(function() {
 				'background': '#fff'
 			});
 			$('header').css({
-				'box-shadow': 'none'
+				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)'
 			});
 		}
 		else{
@@ -68,13 +68,13 @@ $(function() {
 				"position": "",
 				'top': '',
 				'bottom': '0',
-				'box-shadow': 'none',
+				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)',
 			// 	'padding': '0 0 20px',
 			// 	'margin-top': '12px',
 			// 	'background': 'none',
 			});
 			$('header').css({
-				'box-shadow': ''
+				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)'
 			});
 		}
 	})

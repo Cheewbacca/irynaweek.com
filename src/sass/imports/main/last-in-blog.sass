@@ -32,7 +32,7 @@
                 margin-right: auto;
                 margin-top: 40px;
                 @media screen and (max-width: 920px)
-                    padding-left: 15px;
+                    // padding-left: 15px;
                     padding-right: 15px;
                     width: 350px;
                 @media screen and (max-width: 480px)
@@ -92,12 +92,11 @@
                                 bottom: 0;
                                 padding-top: 0px;
                                 height: 55%;
-                                padding-left: 20%;
-                                width: 250px;
+                                width: 100%;
                                 text-align: center;
+                                padding-left: 0px;
                             @media screen and (max-width: 350px)
                                 width: 100%;
-                                padding-left: 0px;
                             h3
                                 font-family: Arial, sans-serif, futurademi;
                                 font-style: normal;
@@ -105,12 +104,14 @@
                                 font-size: 19px;
                                 @media screen and (max-width: 920px)
                                     margin-top: 10px;
+                                    width: 280px;
+                                    margin-left: auto;
+                                    margin-right: auto;
                                 @media screen and (max-width: 480px)
                                     font-size: 19px;
                                 @media screen and (max-width: 350px)
                                     width: 200px;
-                                    margin-left: auto;
-                                    margin-right: auto;
+
 
                             p
                                 width: 420px;
@@ -123,32 +124,28 @@
                                 line-height: 15px;
                                 margin-top: 5px;
                                 @media screen and (max-width: 920px)
-                                    margin-left: -15%;
-                                    width: 250px;
-                                    height: 70px;
+                                    width: 100%;
+                                    height: auto;
                                     font-size: 17px;
-                                @media screen and (max-width: 480px)
-                                    height: 50px;
-                                    width: 260px;
-                                    margin-left: -18%;
-                                    line-height: 19px;
-                                    margin-top: 5px;
-                                @media screen and (max-width: 350px)
                                     margin-left: auto;
                                     margin-right: auto;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                @media screen and (max-width: 480px)
+                                    line-height: 19px;
+                                    margin-top: 5px;                                    
 
                             .blog-link
                                 width: 180px;
                                 margin-top: 35px;
                                 display: flex;
                                 @media screen and (max-width: 920px)
-                                    margin-left: 7%;
                                     position: absolute;
                                     bottom: 20px; 
+                                    left: 50%;
+                                    margin-left: -90px;
                                 @media screen and (max-width: 480px)
                                     width: 150px;
-                                @media screen and (max-width: 350px)
-                                    margin-left: 25%;
                                 .read-more
                                     font-family: Arial, futuralight;
                                     font-style: normal;
@@ -220,9 +217,11 @@
                                 bottom: 0;
                                 padding-top: 0px;
                                 height: 55%;
-                                padding-left: 20%;
-                                width: 250px;
+                                width: 100%;
                                 text-align: center;
+                                padding-left: 0px;
+                            @media screen and (max-width: 350px)
+                                width: 100%;
                             h3
                                 font-family: Arial, sans-serif, futurademi;
                                 font-style: normal;
@@ -231,14 +230,16 @@
                                 @media screen and (max-width: 920px)
                                     margin-top: 10px;
                                     width: 280px;
-                                    margin-left: -23%;
+                                    margin-left: auto;
+                                    margin-right: auto;
                                 @media screen and (max-width: 480px)
                                     font-size: 19px;
+                                @media screen and (max-width: 350px)
+                                    width: 200px;
                             p
                                 width: 420px;
                                 display: block;
                                 height: 40px;
-                                text-overflow: ellipsis;
                                 font-family: Arial, futuralight;
                                 font-style: normal;
                                 font-weight: normal;
@@ -246,31 +247,31 @@
                                 line-height: 15px;
                                 margin-top: 5px;
                                 @media screen and (max-width: 920px)
-                                    margin-left: -15%;
-                                    width: 260px;
-                                    height: 70px;
+                                    width: 100%;
+                                    height: auto;
                                     font-size: 17px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
                                 @media screen and (max-width: 480px)
-                                    height: 50px;
-                                    width: 300px;
                                     line-height: 19px;
-                                    margin-top: 5px;
-                                    margin-left: -28%;
+                                    margin-top: 5px;                     
                             .blog-link
                                 width: 180px;
-                                margin-top: 35px; 
+                                margin-top: 35px;
                                 display: flex;
                                 @media screen and (max-width: 920px)
-                                    margin-left: 7%;
                                     position: absolute;
                                     bottom: 20px; 
+                                    left: 50%;
+                                    margin-left: -90px;
                                 @media screen and (max-width: 480px)
                                     width: 150px;
                                 .read-more
                                     font-family: Arial, futuralight;
                                     font-style: normal;
-                                    font-weight: bold;
-                                    font-size: 13x;      
+                                    font-weight: bold;      
                                     color: #000000;
                                     width: 145px;  
                                     @media screen and (max-width: 480px)
@@ -278,11 +279,10 @@
                                         width: 135px; 
                                         margin-left: auto;
                                         margin-right: auto;
-
                                 .read-more-arrow
                                     width: 6px;
                                     height: 6px;
                                     border-left: 2px solid #000000;
                                     border-top: 2px solid #000000;
                                     transform: rotate(135deg);
-                                    margin-top: 5px;    
+                                    margin-top: 5px;
