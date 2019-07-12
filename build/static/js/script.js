@@ -44,49 +44,57 @@ $(function () {
 });
 
 
-$(function() {
-	$(window).scroll(function(){
-		if($(this).scrollTop() >= 255 && $(this).width() >= 480) {
-			$("nav").css({
-				"position": "fixed",
-				'top': '0',
-				'bottom': 'initial',
-				'left': '0',
-			 	'align-content': 'center',
-			 	'margin': '0',
-			 	'width': '100%',
-			 	'z-index': '1000',
-				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)',
-				'background': '#fff'
-			});
-			$('header').css({
-				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)'
-			});
-		}
-		else{
-			$("nav").css({
-				"position": "",
-				'top': '',
-				'bottom': '0',
-				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)',
-			// 	'padding': '0 0 20px',
-			// 	'margin-top': '12px',
-			// 	'background': 'none',
-			});
-			$('header').css({
-				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)'
-			});
-		}
-	})
-});
+// $(function() {
+// 	$(window).scroll(function(){
+// 		if($(this).scrollTop() >= 255 && $(this).width() >= 480) {
+// 			$("nav").css({
+// 				"position": "fixed",
+// 				'top': '0',
+// 				'bottom': 'initial',
+// 				'left': '0',
+// 			 	'align-content': 'center',
+// 			 	'margin': '0',
+// 			 	'width': '100%',
+// 			 	'z-index': '1000',
+// 				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)',
+// 				'background': '#fff'
+// 			});
+// 			$('header').css({
+// 				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)'
+// 			});
+// 		}
+// 		else{
+// 			$("nav").css({
+// 				"position": "",
+// 				'top': '',
+// 				'bottom': '0',
+// 				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)',
+// 			// 	'padding': '0 0 20px',
+// 			// 	'margin-top': '12px',
+// 			// 	'background': 'none',
+// 			});
+// 			$('header').css({
+// 				'box-shadow': '0 5px 5px rgba(0, 0, 0, .1)'
+// 			});
+// 		}
+// 	})
+// });
 
 /* Make nav fixedable again */
 
 $(function() {
 	var wndw = $(this),
 		header = $('header'),
-		nav = $('nav');
-	var offset = nav.offset().top;
+		nav = $('nav')
+		replacer = $('.nav-fixed-replacer');
+	var offset = replacer.offset().top;
+
+	window.addEventListener("orientationchange", function() {
+	    setTimeout(function(){
+	    	offset = replacer.offset().top;
+	    	// console.log(offset);
+	    }, 150);
+	}, false);
 
 	$(window).scroll(function(){
 		if(wndw.scrollTop() >= offset) {
@@ -169,10 +177,6 @@ $('.single-item').on('afterChange', function(){
 $('#ivents').click(function() {
 	alert("-Пейн, я не чувствую ИВЕНТОВ!!! \n  - У тебя их нет.");
 });
-
-window.addEventListener("orientationchange", function() {
-    window.location.reload();
-}, false);
 
 
 
