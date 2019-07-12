@@ -166,9 +166,13 @@ $('.single-item').on('afterChange', function(){
 	// }).addClass("navButtonWrap__item--active");
 });
 
+$('#ivents').click(function() {
+	alert("-Пейн, я не чувствую ИВЕНТОВ!!! \n  - У тебя их нет.");
+});
 
-
-
+window.addEventListener("orientationchange", function() {
+    window.location.reload();
+}, false);
 
 
 
