@@ -178,7 +178,9 @@ $('#ivents').click(function() {
 	alert("-Пейн, я не чувствую ИВЕНТОВ!!! \n  - У тебя их нет.");
 });
 
-
+$(function(){
+	alert(window.innerWidth + ' x ' + window.innerHeight);
+})
 
 
 
