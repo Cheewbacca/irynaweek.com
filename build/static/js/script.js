@@ -86,10 +86,12 @@ $(function() {
 	var wndw = $(this),
 		header = $('header'),
 		nav = $('nav')
+		list = $('nav .menu'),
 		replacer = $('.nav-fixed-replacer');
 	var offset = replacer.offset().top;
 
 	window.addEventListener("orientationchange", function() {
+		list.css('display', '');
 	    setTimeout(function(){
 	    	offset = replacer.offset().top;
 	    	// console.log(offset);
@@ -175,17 +177,31 @@ $('.single-item').on('afterChange', function(){
 });
 
 $('#ivents').click(function() {
-	alert("-Пейн, я не чувствую ИВЕНТОВ!!! \n  - У тебя их нет.");
+	alert("- Пейн, я не чувствую ИВЕНТОВ!!! \n  - У тебя их нет.");
 });
 
 $(function(){
-	alert(window.innerWidth + ' x ' + window.innerHeight);
+	// alert(window.innerWidth + ' x ' + window.innerHeight);
 })
 
 
 
+// $(function(){
+// 	var header = $('header'),
+// 		mlogo = $('header .mobile_logo');
 
+// 	var checkthisshit = function(){
+// 		alert(window.innerWidth + ' x ' + window.innerHeight + 
+// 		'\n' + header.css('width') + ' ' + mlogo.css('width'));
+// 	};
 
+// 	checkthisshit();
+
+// 	window.addEventListener("orientationchange", function() {
+// 	    setTimeout(checkthisshit, 150);
+// 	}, false);
+
+// });
 
 
 
