@@ -1,0 +1,21 @@
+  body header {
+    background: #00ff66 !important; /*CH*/
+    }
+  body .mobile_logo {
+    background: #0000ff !important; /*CH*/
+    }
+  body .logo {
+    background: #ddff00 !important; /*CH*/
+    }
+  body .hamburger {
+    background: #000000 !important; /*CH*/
+    }
+  body .cross {
+    background: #8c8c8c !important; /*CH*/
+    }
+  body nav {
+    background: #ff0000 !important;
+    }
+  body .nav-fixed-replacer {
+    background: #e500ff !important; /*CH*/
+    }
