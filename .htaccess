@@ -1,0 +1,21 @@
+AddDefaultCharset utf-8
+DefaultLanguage ru-RU
+
+<files .htaccess>
+	order allow,deny
+	deny from all
+</files>
+
+Options All -Indexes
+
+#Options +SymLinksIfOwnerMatch
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^ecology\/(.*)$ http://eco.zzz.com.ua/$1 [NC,R=302,L]
+
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond $1 !^(index\.php|favicon.ico|resources|uploads|mogo|ecology|irweek)
+RewriteRule ^(.*)$ /index.php/$1 [NC,L]
