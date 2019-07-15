@@ -1,0 +1,11 @@
+article {
+  height: 40vh; }
+  article p {
+    text-align: center;
+    font-family: Arial, futuralight;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    padding-top: 7em; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIml2ZW50cy5zYXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksWUFBWSxFQUFBO0VBRGhCO0lBR1Esa0JBQWtCO0lBQ2xCLCtCQUErQjtJQUMvQixrQkFBa0I7SUFDbEIsbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixnQkFBZ0IsRUFBQSIsImZpbGUiOiJpdmVudHMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYXJ0aWNsZSB7XG4gICAgaGVpZ2h0OiA0MHZoO1xuICAgIHAge1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBBcmlhbCwgZnV0dXJhbGlnaHQ7XG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgZm9udC1zaXplOiAxNXB4O1xuICAgICAgICBwYWRkaW5nLXRvcDogN2VtOyB9IH1cbiJdfQ== */
