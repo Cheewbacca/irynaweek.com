@@ -33,15 +33,16 @@ article
         .blog_section
             display: flex;
             flex-wrap: wrap;
-            img 
-                max-width: 100%;
-                height: auto;
-                @media screen and (max-width: 700px)
-                    margin-left: auto;
-                    margin-right: auto;
-                    align-self: center;
+            .image
+                img 
+                    max-width: 100%;
+                    height: auto;
+                    @media screen and (max-width: 700px)
+                        margin-left: auto;
+                        margin-right: auto;
+                        align-self: center;
             .blog-social
-                width: 320px;
+                width: 250px;
                 margin: auto;
                 padding-top: 10px;
                 .date
@@ -157,12 +158,12 @@ article
             margin-bottom: 50px;
             letter-spacing: 0.05rem;
             line-height: 1.5;
-        .picture
+        .image
             text-align: center;
             margin-bottom: 50px;
             img
                 max-width: 100%;
-            .pic-text
+            figcaption
                 text-align: center;
                 margin-top: 0px;
                 font-family: Arial;
@@ -183,7 +184,7 @@ article
             width: 100%;
         @media screen and (max-width: 480px)
             width: 100%;
-        .picture
+        .image
             text-align: center;
             margin-bottom: 50px;
             max-width: 48%;
@@ -207,7 +208,7 @@ article
                 @media screen and (max-width: 480px)
                     height: auto;
 
-            .pic-text
+            figcaption
                 text-align: center;
                 margin-top: 0px;
                 font-family: Arial;
